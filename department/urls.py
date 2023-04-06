@@ -1,8 +1,8 @@
 from rest_framework import routers
-from .api import DepartmentViewset
+from .api import DepartmentViewSet
 
 router = routers.DefaultRouter()
 
-router.register(r'departments', DepartmentViewset, basename='departments')
+router.register(r'departments', DepartmentViewSet, basename='departments')
 
 urlpatterns = router.urls
